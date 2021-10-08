@@ -87,6 +87,12 @@ const CoinStyled = styled.div`
     .green{
         color: #11d811;
     }
+
+    @media(max-width: 100px){
+        .coin-marketcap{ 
+            display: none
+        }
+    }
 `;
 
 export default Coin
