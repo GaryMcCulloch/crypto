@@ -14,12 +14,12 @@ const GlobalStyle = createGlobalStyle`
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 64px;
+      margin-top: 3rem;
       color: #fff;
   }
 
   .coin-search{
-      margin-bottom: 64px;
+      margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -27,12 +27,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .coin-text{
-      margin-bottom: 32px;
+      margin-bottom: .5rem;
       text-align: center;
   }
 
   .coin-input{
-      padding-left: 16px;
+      padding-left: 1rem;
       width: 300px;
       height: 50px;
       border-radius: 4px;
@@ -44,7 +44,51 @@ const GlobalStyle = createGlobalStyle`
     color: #e2e2e2;
   }
 
+  .main-title{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+
+  }
+
+    .accent{
+      color: #ab32e5;
+    }
   
+  h2{ 
+    font-weight: 200;
+  }
+
+  @media(max-width: 1000px){
+    .marketcap{
+      display: none;
+    }
+  }
+  @media(max-width: 900px){
+    .volume{
+      display: none;
+    }
+  }
+
+  @media(max-width: 700px){
+    h3{
+      font-size: 1rem;
+    }
+
+    .img{
+      width: 2rem;
+    }
+  }
 `;
  
 export default GlobalStyle;
+
+// .marketcap{
+//   display: none;
+// }
+// .volume{
+//   display: none;
+// }
+// .symbol{
+//   display: none;
+// }
